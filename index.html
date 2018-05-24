@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>训龙记</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">训龙记</a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#playground">广场</a>
+            </li>
+
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">关于</a>
+            </li>
+
+            <li class="nav-item mx-0 mx-lg-1">
+              <div class="content_show" style="display: none;">
+                  <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#mydragen">我的龙</a>
+              </div>
+            </li>
+
+            <li class="nav-item mx-0 mx-lg-1">
+              <div class="content_show" style="display: none;">
+                  <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#feed">喂养</a>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead bg-primary text-white text-center">
+      <div class="container">
+        <img class="img-fluid mb-5 d-block mx-auto" src="img/dragen.png" alt="">
+        <h1 class="text-uppercase mb-0">训龙记</h1>
+        <hr class="star-light">
+        <h2 class="font-weight-light mb-0">基于星云链的首款边玩游戏、边看广告、边赚收益的游戏。</h2>
+      </div>
+    </header>
+
+  <!-- 广场 -->
+  <section class="portfolio" id="playground">
+    <div class="container">
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <img alt="140x140" src="img/iphoneX.png" width="100%" width="100%" />
+      </br>
+      <p>
+        本期礼物由训龙记游戏工作室提供。当你的龙重量达到10000g的时候，你可以点击下方【兑换礼物】按钮来获取0.01NAS奖励哦。礼物有限，先到先得。抓紧时间驯养成你的大龙吧。
+      </p>
+      <p>
+         如有广告投放等商业合作，请联系我。
+      </p>
+
+      <p>
+        <div class="noExtensionClass" style="display:none" id="noExtension">
+                    请安装 
+            <a target="_blank" href="https://github.com/ChengOrangeJu/WebExtensionWallet">WebExtensionWallet</a> 激活Dapp的功能。
+        </div>  
+      </p>
+
+      <div class="content_show" style="display: none;">
+        <div class="row clearfix">
+          <div class="col-md-4 column">
+              <b>
+                <a onclick="getLeftSupportCount()">获取最新礼物信息</a> 
+              </b>
+          </div>
+<!--           <div class="col-md-4 column">
+              <div>礼物总数:</div>
+          </div> -->
+          <div class="col-md-4 column">
+              <div id="leftSupportCount">礼物剩余数:</div>
+          </div>
+          </div>
+
+          <div class="text-center mt-4">
+            <button class="btn btn-primary btn-xl" id="exchangeGif">兑换礼物</button>
+          </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+  </section>
+
+    <!-- About Section -->
+    <section class="bg-primary text-white mb-0" id="about">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-white">关于</h2>
+        <hr class="star-light mb-5">
+        <div class="row">
+          <div class="col-lg-4 ml-auto">
+            <p class="lead">
+             训龙记是一款基于星云链的模拟游戏。玩家可以购买小龙，通过喂养食物来获取营养，成长成大龙。每个玩家只能驯养一只龙，龙即每个玩家的象征。当龙长到一定体重的时候，可以在广场兑换由广告主提供的礼物。广告主赠予玩家礼物的记录将会被公平公开的记录在区块链上，不可篡改、无暗箱操作。
+          </p>
+          </div>
+          <div class="col-lg-4 mr-auto">
+            <p class="lead">不同的小龙、食物都有不同属性也有不同的定价。但玩家在购买完小龙、食物后可即刻提现出来。同时该游戏供了推广机制。只要你推荐玩家来参与游戏，你便可以获取 10g/玩家 的粮食哦。还在等什么赶紧来游戏吧。礼物有限，先到先得。</p>
+          </div>
+        </div>
+          
+      </div>
+    </section>
+
+        <!-- Portfolio Grid Section -->
+    <section class="portfolio" id="mydragen">
+      <div class="content_show" style="display: none;">
+        
+        <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">我的龙</h2>
+        <hr class="star-dark mb-5">
+        
+        <!-- 判断是否安装了钱包 -->
+        <div class="container">
+          <div class="row clearfix">
+            <div class="col-md-8 column">
+              <input type="text" class="form-control" id="walletAddressInput" placeholder="请输入您的钱包地址" />
+            </div>
+            <div class="col-md-4 column">
+              <button type="button" class="btn btn-block btn-default" style="background-color: rgb(30,177,138);color: rgb(255,255,255);" id="getUserInfo">查询</button>
+            </div>
+          </div>
+          </br>
+        </div>
+
+       <div class="playerNotExist"> 
+
+          <div class="row">
+          
+            <div class="col-lg-3 col-md-6 mb-4"> 
+              <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+                <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                  <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                    <i class="fa fa-search-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="img/portfolio/firstGragon.png" alt="">
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4"> 
+              <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
+                <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                  <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                    <i class="fa fa-search-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="img/portfolio/secondGragon.png" alt="">
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4"> 
+              <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
+                <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                  <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                    <i class="fa fa-search-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="img/portfolio/thirdGragon.png" alt="">
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4"> 
+              <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
+                <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                  <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                    <i class="fa fa-search-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="img/portfolio/forthGragon.png" alt="">
+              </a>
+            </div>
+         </div>
+
+        </div>
+
+        <!-- 用户存在情况 -->
+        <div class="playerExist" style="display: none;"> 
+              <div class="row clearfix">
+
+                <div class="col-md-6 column">
+                  <img src="img/portfolio/firstGragon.png" width="600" height="400" id="myDragon" />
+                </div>
+
+                <div class="col-md-6 column">
+                  <dl>
+                    <dt id="animalName">
+                      名字
+                    </dt>
+                    </br>
+                    <dd id="animalDescription">
+                      
+                    </dd>
+                    </br>
+                    <dt id="animalWeight">
+                      体重 :
+                    </dt>
+                    </br>
+                    <dt id="granry">
+                      水藻存量 :
+                    </dt>
+                    </br>
+                    <dt id="invitationCount">
+                      推广人数 :
+                    </dt>
+                    </br>
+                    <dt id="invitationCode">
+                      我的推广码 :
+                    </dt>
+                    </br>
+                    <dt id="balance">
+                      账户余额 :
+                    </dt>
+                    </br>
+                  </dl>
+                </div>
+
+              </div>
+        </div>
+
+        <div class="text-center mt-4">
+           <button class="btn btn-primary btn-xl" onclick="takeOut()">收回 NAS </button>
+            <!-- <button class="btn btn-primary btn-xl" id="takeOut">收回 NAS </button> -->
+          </div>
+
+      </div>
+    </section>
+
+    <!-- 喂养 -->
+    <section class="portfolio" id="feed">
+      <div class="content_show" style="display: none;">
+        
+        <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">喂养</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+          
+          <div class="col-lg-3 col-md-6 mb-4"> 
+            <a class="portfolio-item d-block mx-auto" href="#feed-modal-1">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/grassFeed.png" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4"> 
+            <a class="portfolio-item d-block mx-auto" href="#feed-modal-2">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/fishFeed.png" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+          <!-- <div class="col-md-6 col-lg-4"> -->
+            <a class="portfolio-item d-block mx-auto" href="#feed-modal-3">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/birdFeed.png" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+          <!-- <div class="col-md-6 col-lg-4"> -->
+            <a class="portfolio-item d-block mx-auto" href="#feed-modal-4">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/horseFeed.png" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <button class="btn btn-primary btn-xl" onclick="takeOut()">收回 NAS</button>
+        </div>
+
+      </div>
+        
+      </div>
+    </section>
+
+
+    <div class="copyright py-4 text-center text-white">
+      <!-- <div class="container">
+        <small>Copyright &copy; Your Website 2018</small>
+      </div> -->
+      <a href="">
+        <img src="./img/logo_white.png" width="180" height="60">
+        </a>
+      <div>基于星云链的训龙记游戏  <a href="mailto:rickliu414149871@gmail.com">联系我</a></div> 
+      </div>
+    </div>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-to-top d-lg-none position-fixed ">
+      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">鱼化龙</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src="img/portfolio/firstGragon.png" alt="">
+              <p class="mb-5">是一种龙头鱼身的龙，亦是一种“龙鱼互变”的形式，这种形式我国古代早已有之。《说苑》中就有“昔日白龙下清冷之渊化为鱼”的记载，《长安谣》说的“东海大鱼化为龙”和民间流传的鲤鱼跳过龙门，均讲述了龙鱼互变的关系。这种造型早在商代晚期便在玉雕中出现，并在历代得到发展。</p>
+              <p>鱼化龙 初始体重为 <b>0g</b> , 用户可以 <b>免费</b> 领取。</p>
+              <input type="text" class="form-control" id="yuhuaDragon" placeholder="邀请码" />
+              <br>
+              <a class="btn btn-primary btn-lg rounded-pill" onclick="setYuhuaDragon()">
+                驯养鱼化龙</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">青龙</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src="img/portfolio/secondGragon.png" alt="">
+              <p class="mb-5">
+                为“四灵”或“四神”之一，又称为苍龙。我国古代的天文学家将天上的若干星星分为二十八个星区，即二十八宿，用以观察月亮的运行和划分季节，并把二十八宿分为四组，每组七宿，分别以东、南、西、北四个方位，青、红、白、黑四种颜色以及龙、鸟、虎、玄武(龟蛇相交)四种动物相配，称为“四象”或“四宫”。龙表示东方，青色，囚此称为“东宫青龙”。
+              </p>
+              <p>青龙 初始体重为 <b>1g</b> , 用户可以 <b>1NAS</b> 购买。购买所用的 NAS <b>即刻可提出</b>。</p>
+              <input type="text" class="form-control" id="qingDragon" placeholder="邀请码" />
+              <br>
+              <a class="btn btn-primary btn-lg rounded-pill" onclick="setQingDragon()">
+                驯养青龙</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">角龙</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src="img/portfolio/thirdGragon.png" alt="">
+              <p class="mb-5">有翼的龙称为应龙。据《述异记》中记述：“龙五百年为角龙，千年为应龙”，应龙称得上是龙中之精了，故长出了翼。相传应龙是上古时期黄帝的神龙，它曾奉黄帝之令讨伐过蚩尤，并杀了蚩尤而成为功臣。在禹治洪水时，神龙曾以尾扫地，疏导洪水而立功，此神龙又名为黄龙，黄龙即是应龙，因此应龙又是禹的功臣。</p>
+              <p>角龙 初始体重为 <b>100g</b> , 用户可以 <b>10NAS</b> 购买。购买所用的 NAS <b>即刻可提出</b>。</p>
+              <input type="text" class="form-control" id="jiaoDragon" placeholder="邀请码" />
+              <br>
+              <a class="btn btn-primary btn-lg rounded-pill" onclick="setJiaoDragon()">
+                驯养角龙</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-4">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">应龙</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src="img/portfolio/forthGragon.png" alt="">
+              <p class="mb-5">应龙于五方主中央、五行司土，为云雨雷霆、沟渎河川之神，亦是天龙之神，天神太一之妃，号曰顺天佑畿辅时应龙神。</p>
+              <p>应龙 初始体重为 <b>1000g</b> , 用户可以 <b>100NAS</b> 购买。购买所用的 NAS <b>即刻可提出</b>。</p>
+              <input type="text" class="form-control" id="yingDragon" placeholder="邀请码"/>
+              <br>
+              <a class="btn btn-primary btn-lg rounded-pill" onclick="setYingDragon()">
+                驯养应龙</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <!-- Feed Modals -->
+
+    <!-- Feed Modal 1 -->
+    <div class="portfolio-modal mfp-hide" id="feed-modal-1">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">水藻</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src="img/portfolio/grassFeed.png" alt="">
+              <p class="mb-5">水藻的来源取决于玩家的推广。水藻不可购买获得，只可由玩家推荐好友参与游戏后自动获得。玩家每推荐一位新的参与者，玩家便可获得 10g 的水藻。不管玩家有多少克水藻，龙都可在喂养水藻后，一次吃完所有的水藻，水藻有多少克，龙便可增加多少克体重。</p>
+              <a class="btn btn-primary btn-lg rounded-pill" onclick="feedGrass()">
+                喂养水藻</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feed Modal 2 -->
+    <div class="portfolio-modal mfp-hide" id="feed-modal-2">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">鱼</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src="img/portfolio/fishFeed.png" alt="">
+              <p class="mb-5">鱼具有高蛋白质。每条鱼可以可以给龙增加 <b>1g</b> 的体重。玩家可以支付 <b>1NAS</b> 来购买鱼。</p>
+              <p>玩家购买所用的 NAS <b>即刻可提出</b></p>
+              <a class="btn btn-primary btn-lg rounded-pill " onclick="feedFish()">
+                喂养鱼</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feed Modal 3 -->
+    <div class="portfolio-modal mfp-hide" id="feed-modal-3">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">鸟</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src="img/portfolio/birdFeed.png" alt="">
+              <p class="mb-5">鸟具有高能量。每只鸟可以可以给龙增加 <b>100g</b> 的体重。玩家可以支付 <b>10NAS</b> 来购买鸟。</p>
+              <p>玩家购买所用的 NAS <b>即刻可提出</b></p>
+              <a class="btn btn-primary btn-lg rounded-pill " onclick="feedBird()">
+                喂养鸟</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feed Modal 4 -->
+    <div class="portfolio-modal mfp-hide" id="feed-modal-4">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">马</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src="img/portfolio/horseFeed.png" alt="">
+              <p class="mb-5">马具有超强战力。每只马可以可以给龙增加 <b>1000g</b> 的体重。玩家可以支付 <b>100NAS</b> 来购买马。</p>
+              <p>玩家购买所用的 NAS <b>即刻可提出</b></p>
+              <a class="btn btn-primary btn-lg rounded-pill " onclick="feedHorse()">
+                喂养马</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/freelancer.min.js"></script>
+
+    <script src="./dist/nebulas.js"></script>
+    <script src="./dist/nebPay.js"></script>
+
+    <!-- 判断是否安装钱包 -->
+    <script type="text/javascript">
+    if (typeof(webExtensionWallet) == 'undefined') {
+      $(".noExtensionClass").show();
+    } else {
+      $(".content_show").show();
+    }
+    </script>
+    
+
+    <script>
+      'use strict';
+
+      var dappAddress = "n22DQQfX9WnBQtkCR4hNcDFqdA1tZjCN9wE";   //mainnet
+      // var dappAddress = "n1xVzMaj5qoHygGtsH895teU2yjzc42ZH37";   //testnet
+      var nebulas = require("nebulas"),
+          Account = nebulas.Account,
+          neb = new nebulas.Neb();
+
+      neb.setRequest(new nebulas.HttpRequest("https://mainnet.nebulas.io"));
+      // neb.setRequest(new nebulas.HttpRequest("https://testnet.nebulas.io"));
+
+      //获取用户信息
+      $("#getUserInfo").click(function() {
+
+        var walletAddress = document.getElementById("walletAddressInput").value;
+        console.log("walletAddress = " + walletAddress);
+
+        var from = Account.NewAccount().getAddressString();
+        var value = "0";
+        var nonce = "0";
+        var gas_price = "1000000";
+        var gas_limit = "2000000";
+        var callFunction = "get";
+        var callArgs = "[\"" + walletAddress + "\"]";
+        var contract = {
+          "function" : callFunction,
+          "args" : callArgs,
+        }
+
+        neb.api.call(from, dappAddress, value, nonce, gas_price, gas_limit, contract).then(function(resp) {
+          cbSearch(resp);
+        }).catch(function(err) {
+          console.log("error: " + err.message);
+        })
+      })
+
+        //return of search
+        function cbSearch(resp) {
+          var result = resp.result; 
+          console.log("result = " + result);
+
+          if (result == 'null') {
+            $(".playerExist").hide();
+            //玩家不存在
+            $(".playerNotExist").show();
+            return
+          } else {
+            $(".playerNotExist").hide();
+            $(".playerExist").show();
+          }
+
+          var object = JSON.parse(result);
+          var animalType = object.animalType;
+          var animalWeight = object.animalWeight;
+          var lastFeedTime = object.lastFeedTime;         //上次喂养时间
+          var granry = object.granry;                     //水藻余粮
+          var invitationCount = object.invitationCount;   //推广人数
+          var invitationCode = object.invitationCode;     //推广码
+          var balance = object.balance;                   //账户余额
+          console.log("animalWeight = " + animalWeight)
+
+          if (animalType == "0") {
+            document.getElementById("animalName").innerHTML = "鱼化龙";
+            document.getElementById("animalDescription").innerHTML = "是一种龙头鱼身的龙，亦是一种“龙鱼互变”的形式，这种形式我国古代早已有之。《说苑》中就有“昔日白龙下清冷之渊化为鱼”的记载，《长安谣》说的“东海大鱼化为龙”和民间流传的鲤鱼跳过龙门，均讲述了龙鱼互变的关系。这种造型早在商代晚期便在玉雕中出现，并在历代得到发展。";
+            document.getElementById("myDragon").src = "img/portfolio/firstGragon.png";
+          } else if (animalType == "1") {
+            document.getElementById("animalName").innerHTML = "青龙";
+            document.getElementById("animalDescription").innerHTML = "为“四灵”或“四神”之一，又称为苍龙。我国古代的天文学家将天上的若干星星分为二十八个星区，即二十八宿，用以观察月亮的运行和划分季节，并把二十八宿分为四组，每组七宿，分别以东、南、西、北四个方位，青、红、白、黑四种颜色以及龙、鸟、虎、玄武(龟蛇相交)四种动物相配，称为“四象”或“四宫”。龙表示东方，青色，囚此称为“东宫青龙”。";
+            document.getElementById("myDragon").src = "img/portfolio/secondGragon.png";
+          } else if (animalType == "2") {
+            document.getElementById("animalName").innerHTML = "角龙";
+            document.getElementById("animalDescription").innerHTML = "有翼的龙称为应龙。据《述异记》中记述：“龙五百年为角龙，千年为应龙”，应龙称得上是龙中之精了，故长出了翼。相传应龙是上古时期黄帝的神龙，它曾奉黄帝之令讨伐过蚩尤，并杀了蚩尤而成为功臣。在禹治洪水时，神龙曾以尾扫地，疏导洪水而立功，此神龙又名为黄龙，黄龙即是应龙，因此应龙又是禹的功臣。";
+            document.getElementById("myDragon").src = "img/portfolio/thirdGragon.png";
+          } else if (animalType == "3") {
+            document.getElementById("animalName").innerHTML = "应龙";
+            document.getElementById("animalDescription").innerHTML = "应龙于五方主中央、五行司土，为云雨雷霆、沟渎河川之神，亦是天龙之神，天神太一之妃，号曰顺天佑畿辅时应龙神。";
+            document.getElementById("myDragon").src = "img/portfolio/forthGragon.png";
+          } 
+
+
+          document.getElementById("animalWeight").innerHTML = "体重 : " + animalWeight + " g"; 
+          // document.getElementById("lastFeedTime").innerHTML = "上次喂养时间 : " + lastFeedTime; 
+          document.getElementById("granry").innerHTML = "水藻存量 : " + granry + " g";
+          document.getElementById("invitationCount").innerHTML = "推广人数 : " + invitationCount + " 人";
+          document.getElementById("invitationCode").innerHTML = "我的推广码 : " + invitationCode;
+          document.getElementById("balance").innerHTML = "账户余额 : " + balance + " NAS";
+        }
+
+        //获取最新礼物信息
+        function getLeftSupportCount() {
+          console.log("getLeftSupportCount");
+          var from = Account.NewAccount().getAddressString();
+          var value = "0";
+          var nonce = "0";
+          var gas_price = "1000000";
+          var gas_limit = "2000000";
+          var callFunction = "getLeftSupportCount";
+          var callArgs = null;
+          var contract = {
+            "function" : callFunction,
+            "args" : callArgs,
+          }
+          neb.api.call(from, dappAddress, value, nonce, gas_price, gas_limit, contract).then(function(resp) {
+              cbGetLeftSupportCountSearch(resp);
+          }).catch(function(err) {
+            console.log("error: " + err.message);
+          })
+        }
+
+        function cbGetLeftSupportCountSearch(resp) {
+          var result = resp.result;
+          document.getElementById("leftSupportCount").innerHTML = "礼物剩余数 : " + result + " NAS";
+        }
+
+        //NebPay
+        var NebPay = require("nebpay");
+        var nebPay = new NebPay();    
+        var serialNumber; //交易序列号
+        var intervalQuery; //定时查询交易结果
+        var mainnetUrl = "https://pay.nebulas.io/api/mainnet/pay";
+        var testnetUrl = "https://pay.nebulas.io/api/pay";
+
+        //驯养鱼化龙  
+        function setYuhuaDragon() {
+          var animalType = 0;
+          var invitedCode = document.getElementById("yuhuaDragon").value;
+          setDragon(animalType, invitedCode);
+        }
+
+        //驯养青龙
+        function setQingDragon() {
+          var animalType = 1;
+          var invitedCode = document.getElementById("qingDragon").value;
+          setDragon(animalType,invitedCode);
+        }
+
+        //驯养角龙
+        function setJiaoDragon() {
+          var animalType = 2;
+          var invitedCode = document.getElementById("jiaoDragon").value;
+          setDragon(animalType,invitedCode);
+        }
+
+        //驯养应龙
+        function setYingDragon() {
+          var animalType = 3;
+          var invitedCode = document.getElementById("yingDragon").value;
+          setDragon(animalType,invitedCode);
+        }
+
+        //驯养龙,龙的类型,龙的邀请码
+        function setDragon(animalType , invitedCode) {
+          var to = dappAddress;   //Dapp的合约地址
+          var value = "0";
+          if (animalType == 0) {
+              value = "0";
+          } else if (animalType == 1) {
+              value = "1";
+          } else if (animalType == 2) {
+              value = "10";
+          } else if (animalType == 3) {
+              value = "100";
+          }
+
+          var callFunction = "set";
+          //(手机号码、用户姓名、宠物名称、邀请码)
+          var callArgs = "[\"" + 0 + "\",\"" + 0 + "\",\"" + 0 + "\",\"" + invitedCode + "\"]"
+          var options = {
+            // callback : testnetUrl
+            //callback 是交易查询服务器地址,
+          callback: NebPay.config.mainnetUrl //在主网查询(默认值)
+            // callback: NebPay.config.testnetUrl    //在测试网查询
+          }
+
+          //发送交易(发起智能合约调用)
+           serialNumber = nebPay.call(to, value, callFunction, callArgs, options);
+
+           //设置定时查询结果
+           intervalQuery = setInterval(function() {
+              funcIntervalQuery();
+           }, 10000); //建议查询频率10-15s,因为星云链出块时间为15s,并且查询服务器限制每分钟最多查询10次。
+        }
+
+        //查询交易结果。queryPayInfo 返回的是一个 Promise 对象
+        function funcIntervalQuery() {
+
+          var options = {
+              //callback 是交易查询服务器地址,
+              // callback : testnetUrl //测试网路查询
+              callback: NebPay.config.mainnetUrl  //在主网查询(默认值)
+              // callback: NebPay.config.testnetUrl     //在测试网查询
+          }
+
+          //queryPayInfo的options参数用来指定查询交易的服务器地址,(如果是主网可以忽略,因为默认服务器是在主网查询)
+          nebPay.queryPayInfo(serialNumber, options)  //search transaction result from server (result upload to server by app)
+            .then(function(resp){
+              console.log("tx result: " + resp);
+              var respObject = JSON.parse(resp)
+              //code==0 交易发送成功,status==交易已被打包上链
+              if (respObject.code === 0 && respObject.data.status === 1) {
+                //交易成功,处理后续任务...
+                console.log("交易成功,处理后续任务...");
+                clearInterval(intervalQuery)  //清楚定时查询
+              }
+            })
+            .catch(function(err) {
+              console.log(err);
+            })
+        } 
+
+        //收回 NAS 
+        function takeOut() {
+          var to = dappAddress;   //Dapp的合约地址
+          var value = "0";
+          var callFunction = "takeOut";
+          var callArgs = null;
+          var options = {
+            //callback 是交易查询服务器地址,
+              // callback : testnetUrl //测试网路查询
+              callback: NebPay.config.mainnetUrl  //在主网查询(默认值)
+              // callback: NebPay.config.testnetUrl     //在测试网查询
+          }
+          //发起交易(发起智能合约调用)
+          serialNumber = nebPay.call(to, value, callFunction, callArgs, options);
+
+          //设置定时查询结果
+           intervalQuery = setInterval(function() {
+              funcIntervalQuery();
+           }, 10000); //建议查询频率10-15s,因为星云链出块时间为15s,并且查询服务器限制每分钟最多查询10次。
+        }
+
+        // $("#takeOut").click(function() {
+          
+        // })
+
+        //喂养水藻
+        function feedGrass() {
+          var feedType = "0";
+          feed(feedType);
+        }
+
+        //喂养鱼
+        function feedFish() {
+          var feedType = "1";
+          feed(feedType);
+        }
+
+        //喂养鸟
+        function feedBird() {
+          var feedType = "2";
+          feed(feedType);
+        }
+
+        //喂养马
+        function feedHorse() {
+          var feedType = "3";
+          feed(feedType);
+        }
+
+        //喂养
+        function feed(feedType) {
+          var to = dappAddress;
+          var value = "0";
+          if (feedType == 0) {
+              value = "0";
+          } else if (feedType == 1) {
+              value = "1";
+          } else if (feedType == 2) {
+              value = "10";
+          } else if (feedType == 3) {
+              value = "100";
+          }
+          var callFunction = "feed";
+          var callArgs = null;
+          var options = {
+            //callback 是交易查询服务器地址,
+              // callback : testnetUrl //测试网路查询
+              callback: NebPay.config.mainnetUrl  //在主网查询(默认值)
+              // callback: NebPay.config.testnetUrl     //在测试网查询
+          }
+          //发送交易(发起智能合约调用)
+          serialNumber = nebPay.call(to, value, callFunction, callArgs, options);
+ 
+           //设置定时查询结果
+           intervalQuery = setInterval(function() {
+              funcIntervalQuery();
+           }, 10000);  //建议查询频率10-15s,因为星云链出块时间为15s,并且查询服务器限制每分钟最多查询10次。
+        }
+
+        //兑换礼物
+        $("#exchangeGif").click(function() {
+          var to = dappAddress;
+          var value = "0";
+          var callFunction = "exchangeGif";
+          var callArgs = null;
+          var options = {
+            //callback 是交易查询服务器地址,
+              // callback : testnetUrl //测试网路查询
+              callback: NebPay.config.mainnetUrl  //在主网查询(默认值)
+              // callback: NebPay.config.testnetUrl    //在测试网查询
+          }
+          //发送交易(发起智能合约调用)
+          serialNumber = nebPay.call(to, value, callFunction, callArgs, options);
+
+          //设置定时查询结果
+          intervalQuery = setInterval(function() {
+            funcIntervalQuery();
+          },10000);//建议查询频率10-15s,因为星云链出块时间为15s,并且查询服务器限制每分钟最多查询10次。
+        })
+
+    </script>
+
+  </body>
+</html>
